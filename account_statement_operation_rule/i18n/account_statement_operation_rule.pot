@@ -6,8 +6,6 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-16 14:46+0000\n"
-"PO-Revision-Date: 2015-03-16 14:46+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -58,6 +56,16 @@ msgid "Currencies"
 msgstr ""
 
 #. module: account_statement_operation_rule
+#: field:account.statement.operation.rule,display_name:0
+msgid "Display Name"
+msgstr ""
+
+#. module: account_statement_operation_rule
+#: selection:account.statement.operation.rule,rule_type:0
+msgid "Dunning Fees"
+msgstr ""
+
+#. module: account_statement_operation_rule
 #: help:account.statement.operation.rule,currencies:0
 msgid "For 'Currencies' rules, you can choose for which currencies the rule will be applicable."
 msgstr ""
@@ -70,6 +78,11 @@ msgstr ""
 #. module: account_statement_operation_rule
 #: help:account.statement.operation.rule,sequence:0
 msgid "If several rules match, the first one is used."
+msgstr ""
+
+#. module: account_statement_operation_rule
+#: field:account.statement.operation.rule,__last_update:0
+msgid "Last Modified on"
 msgstr ""
 
 #. module: account_statement_operation_rule

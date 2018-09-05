@@ -1,16 +1,16 @@
-[![Build Status](https://travis-ci.org/OCA/bank-statement-reconcile.svg?branch=8.0)](https://travis-ci.org/OCA/bank-statement-reconcile)
-[![Coverage Status](https://coveralls.io/repos/OCA/bank-statement-reconcile/badge.png?branch=8.0)](https://coveralls.io/r/OCA/bank-statement-reconcile?branch=8.0)
+[![Build Status](https://travis-ci.org/OCA/account-reconcile.svg?branch=8.0)](https://travis-ci.org/OCA/account-reconcile)
+[![Coverage Status](https://coveralls.io/repos/OCA/account-reconcile/badge.png?branch=8.0)](https://coveralls.io/r/OCA/account-reconcile?branch=8.0)
 
-Odoo modules for statements tasks (completion, reconciliation)
-==============================================================
+Odoo account reconciliation modules (statements, data completion,...)
+=====================================================================
 
 ***Important notice: since version 8.0, the import feature has moved here: https://github.com/OCA/bank-statement-import***
 
 
-__Version 8.0 and earlier :__
+__Version 8.0 and later :__
 
 * Completion of infos (partner, account, ref,...) in statements.
-* Provide methods for making automatic reconciliation in batch
+* Provide methods for making automatic reconciliation in batch.
 
 Other features can be found in those repository:
 * https://github.com/OCA/bank-payment
@@ -24,6 +24,7 @@ __Version 7.0 and earlier :__
 
 
 [//]: # (addons)
+
 Available addons
 ----------------
 addon | version | summary
@@ -38,6 +39,7 @@ addon | version | summary
 [account_statement_operation_rule](account_statement_operation_rule/) | 8.0.1.0.0 | Bank Statement Operation Rules
 [account_statement_operation_rule_dunning_fees](account_statement_operation_rule_dunning_fees/) | 8.0.1.0.0 | Bank Statement Operation Rules with Dunning Fees
 [base_transaction_id](base_transaction_id/) | 8.0.1.0.0 | Base transaction id for financial institutes
+
 
 Unported addons
 ---------------

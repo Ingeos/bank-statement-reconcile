@@ -1,13 +1,11 @@
-# Translation of OpenERP Server.
+# Translation of Odoo Server.
 # This file contains the translation of the following modules:
 #	* account_advanced_reconcile
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenERP Server 7.0\n"
+"Project-Id-Version: Odoo Server 8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-21 11:54+0000\n"
-"PO-Revision-Date: 2014-01-21 11:54+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,9 +14,9 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: account_advanced_reconcile
-#: field:easy.reconcile.advanced,partner_ids:0
-#: field:easy.reconcile.advanced.ref,partner_ids:0
-msgid "Restrict on partners"
+#: code:addons/account_advanced_reconcile/models/base_advanced_reconciliation.py:176
+#, python-format
+msgid "A matcher %s is compared with a matcher %s, the _matchers and _opposite_matchers are probably wrong"
 msgstr ""
 
 #. module: account_advanced_reconcile
@@ -28,14 +26,9 @@ msgid "Account"
 msgstr ""
 
 #. module: account_advanced_reconcile
-#: model:ir.model,name:account_advanced_reconcile.model_account_easy_reconcile_method
-msgid "reconcile method for account_easy_reconcile"
-msgstr ""
-
-#. module: account_advanced_reconcile
-#: field:easy.reconcile.advanced,journal_id:0
-#: field:easy.reconcile.advanced.ref,journal_id:0
-msgid "Journal"
+#: field:easy.reconcile.advanced,account_lost_id:0
+#: field:easy.reconcile.advanced.ref,account_lost_id:0
+msgid "Account Lost"
 msgstr ""
 
 #. module: account_advanced_reconcile
@@ -45,19 +38,30 @@ msgid "Account Profit"
 msgstr ""
 
 #. module: account_advanced_reconcile
-#: view:account.easy.reconcile:0
-msgid "Match multiple debit vs multiple credit entries. Allow partial reconciliation. The lines should have the partner, the credit entry ref. is matched vs the debit entry ref. or name."
-msgstr ""
-
-#. module: account_advanced_reconcile
-#: field:easy.reconcile.advanced,filter:0
-#: field:easy.reconcile.advanced.ref,filter:0
-msgid "Filter"
-msgstr ""
-
-#. module: account_advanced_reconcile
-#: view:account.easy.reconcile:0
+#: view:account.easy.reconcile:account_advanced_reconcile.view_easy_reconcile_form
 msgid "Advanced. Partner and Ref"
+msgstr ""
+
+#. module: account_advanced_reconcile
+#: help:easy.reconcile.advanced,analytic_account_id:0
+#: help:easy.reconcile.advanced.ref,analytic_account_id:0
+msgid "Analytic account for the write-off"
+msgstr ""
+
+#. module: account_advanced_reconcile
+#: field:easy.reconcile.advanced,analytic_account_id:0
+#: field:easy.reconcile.advanced.ref,analytic_account_id:0
+msgid "Analytic_account"
+msgstr ""
+
+#. module: account_advanced_reconcile
+#: field:easy.reconcile.advanced.ref,create_uid:0
+msgid "Created by"
+msgstr ""
+
+#. module: account_advanced_reconcile
+#: field:easy.reconcile.advanced.ref,create_date:0
+msgid "Created on"
 msgstr ""
 
 #. module: account_advanced_reconcile
@@ -67,24 +71,76 @@ msgid "Date of reconciliation"
 msgstr ""
 
 #. module: account_advanced_reconcile
-#: model:ir.model,name:account_advanced_reconcile.model_easy_reconcile_advanced
-msgid "easy.reconcile.advanced"
+#: field:easy.reconcile.advanced,display_name:0
+#: field:easy.reconcile.advanced.ref,display_name:0
+msgid "Display Name"
 msgstr ""
 
 #. module: account_advanced_reconcile
-#: field:easy.reconcile.advanced,account_lost_id:0
-#: field:easy.reconcile.advanced.ref,account_lost_id:0
-msgid "Account Lost"
+#: field:easy.reconcile.advanced,filter:0
+#: field:easy.reconcile.advanced.ref,filter:0
+msgid "Filter"
 msgstr ""
 
 #. module: account_advanced_reconcile
-#: model:ir.model,name:account_advanced_reconcile.model_easy_reconcile_advanced_ref
-msgid "easy.reconcile.advanced.ref"
+#: field:easy.reconcile.advanced,income_exchange_account_id:0
+#: field:easy.reconcile.advanced.ref,income_exchange_account_id:0
+msgid "Gain Exchange Rate Account"
+msgstr ""
+
+#. module: account_advanced_reconcile
+#: field:easy.reconcile.advanced,id:0
+#: field:easy.reconcile.advanced.ref,id:0
+msgid "ID"
+msgstr ""
+
+#. module: account_advanced_reconcile
+#: field:easy.reconcile.advanced,journal_id:0
+#: field:easy.reconcile.advanced.ref,journal_id:0
+msgid "Journal"
+msgstr ""
+
+#. module: account_advanced_reconcile
+#: field:easy.reconcile.advanced,__last_update:0
+#: field:easy.reconcile.advanced.ref,__last_update:0
+msgid "Last Modified on"
+msgstr ""
+
+#. module: account_advanced_reconcile
+#: field:easy.reconcile.advanced.ref,write_uid:0
+msgid "Last Updated by"
+msgstr ""
+
+#. module: account_advanced_reconcile
+#: field:easy.reconcile.advanced.ref,write_date:0
+msgid "Last Updated on"
+msgstr ""
+
+#. module: account_advanced_reconcile
+#: field:easy.reconcile.advanced,expense_exchange_account_id:0
+#: field:easy.reconcile.advanced.ref,expense_exchange_account_id:0
+msgid "Loss Exchange Rate Account"
+msgstr ""
+
+#. module: account_advanced_reconcile
+#: view:account.easy.reconcile:account_advanced_reconcile.view_easy_reconcile_form
+msgid "Match multiple debit vs multiple credit entries. Allow partial reconciliation. The lines should have the partner, the credit entry ref. is matched vs the debit entry ref. or name."
+msgstr ""
+
+#. module: account_advanced_reconcile
+#: field:easy.reconcile.advanced,partner_ids:0
+#: field:easy.reconcile.advanced.ref,partner_ids:0
+msgid "Restrict on partners"
 msgstr ""
 
 #. module: account_advanced_reconcile
 #: field:easy.reconcile.advanced,write_off:0
 #: field:easy.reconcile.advanced.ref,write_off:0
 msgid "Write off allowed"
+msgstr ""
+
+#. module: account_advanced_reconcile
+#: model:ir.model,name:account_advanced_reconcile.model_account_easy_reconcile_method
+msgid "reconcile method for account_easy_reconcile"
 msgstr ""
 

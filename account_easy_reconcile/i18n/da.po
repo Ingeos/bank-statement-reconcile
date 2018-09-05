@@ -1,20 +1,21 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # * account_easy_reconcile
-# 
+#
 # Translators:
 msgid ""
 msgstr ""
 "Project-Id-Version: bank-statement-reconcile (8.0)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-24 00:36+0000\n"
-"PO-Revision-Date: 2016-12-22 14:07+0000\n"
+"POT-Creation-Date: 2017-03-28 01:39+0000\n"
+"PO-Revision-Date: 2017-04-25 10:44+0000\n"
 "Last-Translator: OCA Transbot <transbot@odoo-community.org>\n"
-"Language-Team: Danish (http://www.transifex.com/oca/OCA-bank-statement-reconcile-8-0/language/da/)\n"
+"Language-Team: Danish (http://www.transifex.com/oca/OCA-bank-statement-"
+"reconcile-8-0/language/da/)\n"
+"Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: da\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. module: account_easy_reconcile
@@ -120,7 +121,7 @@ msgstr "Virksomheder"
 #: field:account.easy.reconcile.method,company_id:0
 #: field:easy.reconcile.history,company_id:0
 msgid "Company"
-msgstr ""
+msgstr "Virksomhed"
 
 #. module: account_easy_reconcile
 #: view:account.easy.reconcile:account_easy_reconcile.account_easy_reconcile_form
@@ -317,7 +318,7 @@ msgstr ""
 #: field:easy.reconcile.simple.partner,journal_id:0
 #: field:easy.reconcile.simple.reference,journal_id:0
 msgid "Journal"
-msgstr ""
+msgstr "Journal"
 
 #. module: account_easy_reconcile
 #: field:account.easy.reconcile,message_last_post:0
